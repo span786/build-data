@@ -155,6 +155,7 @@ foss_platforms:
   - el-8-aarch64
   - el-9-x86_64
   - el-9-aarch64
+  - el-9-ppc64le
   - fedora-36-x86_64
   - osx-11-arm64
   - osx-11-x86_64
