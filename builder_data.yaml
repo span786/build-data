@@ -4,13 +4,10 @@ gpg_key: '4528B6CD9E61EF26'
 rpm_build_host: rpm-builder.delivery.puppetlabs.net
 deb_build_host: builder-deb.delivery.puppetlabs.net
 osx_build_host: osx-builder.delivery.puppetlabs.net
-ips_build_host: builder-ips.delivery.puppetlabs.net
 dmg_path: "/opt/downloads/mac"
 nonfinal_dmg_path: "/opt/repository-nightlies/downloads"
 ips_path: "/opt/downloads/solaris"
 nonfinal_ips_path: "/opt/repository-nightlies/downloads"
-swix_path: "/opt/downloads/eos"
-nonfinal_swix_path: "/opt/repository-nightlies/downloads"
 msi_path: "/opt/downloads/windows"
 nonfinal_msi_path: "/opt/repository-nightlies/downloads"
 certificate_pem: "/root/puppet_cert.pem"
@@ -29,12 +26,10 @@ apt_host: 'enterprise.delivery.puppetlabs.net'
 tar_host: 'downloads.puppetlabs.com'
 msi_host: 'downloads.puppetlabs.com'
 dmg_host: 'downloads.puppetlabs.com'
-swix_host: 'downloads.puppetlabs.com'
 msi_host: 'downloads.puppetlabs.com'
 msi_staging_server: 'weth.delivery.puppetlabs.net'
 tar_staging_server: 'weth.delivery.puppetlabs.net'
 dmg_staging_server: 'weth.delivery.puppetlabs.net'
-swix_staging_server: 'weth.delivery.puppetlabs.net'
 msi_staging_server: 'weth.delivery.puppetlabs.net'
 apt_signing_server: weth.delivery.puppetlabs.net
 apt_repo_path: "/opt/repository/apt"
@@ -127,16 +122,8 @@ osx_signing_ssh_key: '/home/jenkins/.ssh/id_signing'
 msi_signing_server: 'jenkins@msi-signer-prod-1.delivery.puppetlabs.net'
 msi_signing_ssh_key: '/home/jenkins/.ssh/id_signing'
 
-## Obsolescent -- Soon to be deprecated
-msi_signing_service_url: 'https://serverless-sign-prod-4k7em2ejkq-uc.a.run.app/signMSI'
-extra_file_signing_service_url: 'https://serverless-sign-prod-4k7em2ejkq-uc.a.run.app/signPS1'
-msi_signing_gcp_service_account_credentials: '/var/lib/jenkins/.creds/gcp-service-account-credentials-windows-signer.json'
-###
-
 gcp_signed_bucket: 'windows-signed-bucket-prod'
 gcp_tosign_bucket: 'windows-tosign-bucket-prod'
-ips_signing_ssh_key: '/home/jenkins/.ssh/id_signing'
-ips_signing_server: 'rama.delivery.puppetlabs.net'
 s3_ship: true
 foss_platforms:
   - amazon-2023-x86_64
