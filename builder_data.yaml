@@ -115,7 +115,7 @@ yum_repo_command: |
     keychain -k mine;
   ) 300>/var/lock/yum-repo-lock
 osx_signing_cert: "Developer ID Installer: PUPPET LABS, INC. (VKGLGN2B6Y)"
-osx_signing_keychain: "Puppet Labs VKGLGN2B6Y"
+osx_signing_keychain: "/Users/jenkins/Library/Keychains/signing.keychain-db"
 osx_signing_server: 'jenkins@osx-signer-prod-3.delivery.puppetlabs.net'
 osx_signing_ssh_key: '/home/jenkins/.ssh/id_signing'
 
